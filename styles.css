@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+/* Général */
+
+html,body{
+	margin: 0;
+	padding:0;
+	width: 100%;
+}
+
+html{
+	scroll-behavior:smooth;
+}
+
+body{
+	text-align:center;
+	font-size: 25px;
+	background-color: darkgrey;	
+}
+
+h1,h2{
+	font-size:80px;
+	color: white;
+	background-color: #1D3C85;
+	border: 10px solid #CA953E;
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px black;
+	margin:30px auto;
+	padding: 20px;
+	width: 50%;
+	font-family: 'Redressed', cursive;
+	text-shadow: 5px 5px 3px black;
+}
+
+h2{
+	font-size: 60px;
+	font-family: 'Redressed', cursive;
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+
+h3{
+	color:black;
+	text-decoration: underline;
+	font-size:35px;
+	font-family: 'Redressed', cursive;
+	padding: 20px;
+}
+
+img:not(.logo), iframe{
+	border: 5px solid black;
+	border-radius:10px;
+	box-shadow: 10px 10px 10px black;
+}
+
+.scale:hover{
+	transform: scale(1.10);
+	border: 5px solid black;
+	border-radius:10px;
+	box-shadow: 10px 10px 10px black;
+}
+
+h2+p{
+	font-size: 25px;
+}
+
+.logo{
+	width: 200px;
+	display: block;
+	margin: 10px auto;
+}
+
+/* Header */
+
+header{
+	background: url(images/stade.jpg);
+	padding-top: 30px;	
+}
+
+#lions{
+	width: 500px;
+	border: 10px solid #CA953E;
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px black;
+}
+
+/* Navigation */
+
+
+nav{
+	background-color: #5c4218c9;
+	z-index: 1;
+	position: sticky;
+	top:20px;
+	right: 0;
+	left: 0;
+	border: 2px solid black;
+	border-radius: 20px;
+	margin: 20px;
+}
+
+nav a{
+	font-size: 30px;
+	color:#1D3C85;
+	padding:  20px;
+	margin: 10px;
+	text-decoration: none;
+	font-size: 35px;
+	border: 2px solid black ;
+	border-radius: 20px;
+	background-color: #CA953E;
+	font-family: 'Redressed', cursive;
+	display: inline-block;
+}
+
+nav a:hover{
+	background-color: rgb(163, 19, 19) ;
+	color: white;
+}
+
+/* Description */
+
+.description {
+	border: 5px solid ;
+	width:80%;
+	margin:60px auto 50px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+	padding:10px;
+	background-color: #ca943e5d;
+}
+
+/* Les Equipes */
+
+#photos{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	background-color: #1d3c85a6;
+	padding-bottom: 50px;	
+}
+
+.teams{
+	width: 50%;
+	margin: 50px auto;
+}
+
+/* Supporters */
+
+#public{
+	display: flex;
+	justify-content: space-around;
+}
+
+#public+iframe{
+	width: 80%;
+	margin: 20px;
+}
+
+#public+img{
+	width: 80%;
+	margin: 40px;
+}
+
+#public+img:hover{
+	transform: scale(1);
+}
+
+#chant{
+	width:20%;
+	border: 5px solid ;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+	padding:10px;
+	background-color: #ca943ea1;
+}
+
+audio{
+	margin-bottom: 30px;
+}
+
+/* Joueurs à fort potentiel */
+
+li{
+	list-style-type:none;
+	height: 350px;
+	color: black;
+	background-color:#CA953E ;
+	font-size:80px;
+	width: 30%;
+	font-family: 'Dancing Script', cursive;
+	border: 10px solid black;
+	border-radius:10px;
+	box-shadow: 5px 5px 10px;
+	margin: 50px auto;
+	padding-top: 350px;
+}
+
+li a{
+	line-height: 200px;
+	border: 2px solid black ;
+	padding: 20px;
+	background-color:#ca943ecc ;
+	border-radius:10px;
+	box-shadow: 5px 5px 10px;
+	text-decoration: none;
+	color: black;
+	
+}
+
+ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0;
+}
+
+progress {
+	border: none;
+	width: 80%;
+	height: 40px;
+	background: rgba(255, 255, 255, 0.315);
+	border-radius: 20px;
+}
+  
+progress::-webkit-progress-bar {
+    border: 0;
+    height: 40px;
+    border-radius: 20px;
+}
+progress::-webkit-progress-value {
+    border: 0;
+    height: 40px;
+    border-radius: 20px;
+	background: #1d3c85a6;
+}
+
+#potentiel+p{
+	font-family: 'Redressed', cursive;
+	font-size: 40px;	
+}
+
+#oussem{
+	background: url(images/aouar.jpg) center;
+}
+
+#leo{
+	background: url(images/dubois.jpg) center;
+}
+
+#maxwel{
+	background: url(images/cornet.jpg) center;
+}
+
+#lucas{
+	background: url(images/paqueta.jpg) center;
+}
+
+#karl{
+	background: url(images/toko.jpg) center;
+}
+#memphis{
+	background: url(images/depay.jpg) center;
+}
+
+/* Tarifs */
+
+table{
+	margin:80px auto;
+	border: 10px solid rgb(163, 19, 19);
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+	padding:20px;
+	background-color: #ca943e60;
+	width: 60%;	
+	font-size: 40px;
+}
+
+th,td{
+	border: 2px solid black;
+	padding:5px;
+}
+
+/* Quel supporter? */
+
+#vous
+{
+	font-size: 35px;
+	text-decoration: underline;
+}
+
+form{
+	text-align:left;
+	padding-left:33%;
+	font-size: 35px;
+}
+
+
+#envoyer{
+	font-size:20px;
+	width: 200px;
+	margin: 30px 100px;
+	text-decoration:none;
+	border: 2px solid black;
+	border-radius:10px;
+	background-color: #CA953E;
+	font-size: 35px;
+}
+
+form input, textarea, select{
+	border-radius:10px;
+	border: 2px solid black;
+	text-align: center;
+	outline:none; 
+	font-size: 25px;
+}
+
+textarea{
+	padding-top: 20px;
+}
+
+/*///////////////////
+/// Media queries///
+//////////////////*/
+
+/* Général */
+
+@media (max-width: 1000px){
+	h1{
+		font-size: 50px;
+	}
+	
+	h2{
+		font-size: 40px;
+	}
+}
+
+/* Navigation*/
+
+@media (max-width: 1830px) {
+	nav a{
+	font-size: 30px;
+	}	
+}
+
+@media (max-width: 1650px){
+	nav{
+		padding:5px;
+	}
+	
+	nav a{
+		font-size: 25px;
+		}
+}
+
+/* Joueurs à fort potentiel */
+
+@media (max-width: 2000px){
+	
+	ul{
+		justify-content: center;	
+	}
+}
+
+@media (max-width: 1780px){
+	li{
+		font-size: 60px;
+		}
+}
+@media (max-width: 1300px){
+	li{
+		font-size: 40px;
+		}
+}
+@media (max-width: 1000px){
+	ul{
+		display: block;
+		
+		}
+		li{
+			font-size: 60px;
+			width: 80%;
+		}
+}
+
+/* Les equipes */
+
+@media (max-width: 1000px){
+	#photos{
+		margin: auto;
+		display: block;
+		padding-top: 1px;
+	}
+
+}
+
+/*Supporters*/
+
+@media (max-width: 1600px) {
+	#public+img{
+		width: 80%;
+	}
+
+	iframe{
+		width: 80%;
+	}
+ }
+
+ @media (max-width: 1700px){
+	#public{
+		margin: auto;
+		display: block;
+	}
+	#chant{
+		margin: 30px auto;
+		width: 80%;
+	}
+}
+
+/* Quel supporter */
+
+@media (max-width: 1000px){
+	
+	#vous
+	{
+		font-size: 25px;
+	}
+
+	form{
+		font-size: 25px;
+	}
+
+	#envoyer{
+		font-size:25px;
+	}
+
+	form input, select{
+		font-size: 25px;
+	}
+
+	textarea{
+		font-size: 10px;
+	}
+
+	table{
+		
+		font-size: 30px;
+	}
+
+}
